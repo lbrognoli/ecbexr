@@ -1,3 +1,3 @@
 European Central Bank Last Prices API
 
-Live Demo : 
+Live Demo : https://ecblastprices.herokuapp.com/
