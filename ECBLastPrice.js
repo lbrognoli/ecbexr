@@ -19,7 +19,7 @@ const getTimeSeries = async (currency, startDate, endDate) => {
     
     const formatRows = R.map(row => {
         return {
-            currencyPair : currency + "/EUR",
+            currencyPair : "EUR/" + currency  ,
             date : moment(row["generic:ObsDimension"]._attributes.value, "YYYY-MM-DD").format("DD/MM/YYYY"),
             rate : Number(row["generic:ObsValue"]._attributes.value),
             source : "ECB"
